@@ -4,4 +4,7 @@
 PROG=	yash
 SRCS=	yash.c
 
+LDADD+=-lutil
+DPADD+=${LIBUTIL}
+
 .include <bsd.prog.mk>
